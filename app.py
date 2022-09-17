@@ -36,7 +36,7 @@ def home():
 
 
 @app.route('/sketch',
-           methods=['POST'])
+           methods=['POST', 'GET'])
 def sketch():
     file = request.files['file']
     if file and allowed_file(file.filename):
